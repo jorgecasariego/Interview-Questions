@@ -1,4 +1,4 @@
-Merge Sort
+# Merge Sort
 
 The Mergesort algorithm can be used to sort a collection of objects. Mergesort is a so called divide and conquer algorithm. Divide and conquer algorithms divide the original data into smaller sets of data to solve the problem.
 
@@ -14,7 +14,7 @@ To avoid the creation of too many collections, typically one new collection is c
 
 
 
-![alt text](https://github.com/jorgecasariego/Interview-Questions/blob/master/print-binary-tree/Merge-Sort-Tutorial.jpg)
+![alt text](https://github.com/jorgecasariego/Interview-Questions/blob/master/Merge%20Sort/Merge-Sort-Tutorial.png)
 
 
 
