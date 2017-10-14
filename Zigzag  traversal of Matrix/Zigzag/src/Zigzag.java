@@ -87,8 +87,8 @@ public class Zigzag {
 				{17, 18, 19, 20}
 		};
 		
-		R = array.length;
-		C = array[0].length;
+		R = array.length; 		// Amount of rows
+		C = array[0].length;	// Amount of elements (Columns) in every array
 		
 		diagonalOrder(array);
 	}
