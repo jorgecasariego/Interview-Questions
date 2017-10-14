@@ -4,7 +4,7 @@ Android is an Open Source mobile operating system developed by Google and based 
 # What is the APK format?
 Android Application Package (APK) is the package file format used to distributed and install application software onto Android.
 
-![alt text](https://github.com/jorgecasariego/Interview-Questions/blob/master/android-interview-apk-structure.jpg)
+![alt text](https://github.com/jorgecasariego/Interview-Questions/blob/master/Android%20/android-interview-apk-structure.jpg)
 
 # What is Dalvik?
 Dalvik is a register-based Virtual Machine (VM). Every Android app runs in its own proccess with its own isntance of the Dalvik VM.

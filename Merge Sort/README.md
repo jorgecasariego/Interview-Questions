@@ -1,4 +1,4 @@
-Merge Sort
+# Merge Sort
 
 The Mergesort algorithm can be used to sort a collection of objects. Mergesort is a so called divide and conquer algorithm. Divide and conquer algorithms divide the original data into smaller sets of data to solve the problem.
 
@@ -14,20 +14,21 @@ To avoid the creation of too many collections, typically one new collection is c
 
 
 
-![alt text](https://github.com/jorgecasariego/Interview-Questions/blob/master/print-binary-tree/Merge-Sort-Tutorial.jpg)
+![alt text](https://github.com/jorgecasariego/Interview-Questions/blob/master/Merge%20Sort/Merge-Sort-Tutorial.png)
 
 
 
-Time Complexity:
+## Time Complexity:
+
 Time complexity of Merge Sort is O(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array in two halves and take linear time to merge two halves.
 
-Auxiliary Space: O(n)
+  > Auxiliary Space: O(n)
 
-Algorithmic Paradigm: Divide and Conquer
+  > Algorithmic Paradigm: Divide and Conquer
 
-Sorting In Place: No in a typical implementation
+  > Sorting In Place: No in a typical implementation
 
-Stable: Yes
+  > Stable: Yes
 
 
 
