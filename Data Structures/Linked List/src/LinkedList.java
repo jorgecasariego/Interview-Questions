@@ -156,5 +156,7 @@ public class LinkedList {
 		linkedList.remove(3);
 		System.out.println(linkedList.toString());
 		
+		System.out.println(linkedList.getIndex(1).toString());
+		
 	}
 }
