@@ -4,6 +4,9 @@ A permutation, also called an “arrangement number” or “order,” is a rear
 
 > A string of length n has n! permutation.
 
+Below are the permutations of string ABC.
+ABC ACB BAC BCA CBA CAB
+
 
 
 ![alt text](https://github.com/jorgecasariego/Interview-Questions/blob/master/Merge%20Sort/Merge-Sort-Tutorial.png)
