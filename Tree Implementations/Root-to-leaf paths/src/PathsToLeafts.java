@@ -45,6 +45,22 @@ public class PathsToLeafts {
 		path.remove(path.size()-1);
 	}
 	
+	public static int maxHeight(TreeNode node){
+		if(node == null){
+			return 0;
+		}
+		
+		int leftNode = maxHeight(node.left) + 1;
+		int rightNode = maxHeight(node.right) + 1;
+		
+		if(leftNode > rightNode){
+			return leftNode;
+		} else {
+			return rightNode;
+		}
+		
+	}
+	
 	public static void printResult(ArrayList<Integer> result){
 		Iterator<Integer> i = result.iterator();
 		System.out.print("[");
@@ -63,6 +79,11 @@ public class PathsToLeafts {
 		root.left.left = new TreeNode(4);
 		root.left.right = new TreeNode(5);
 		
+		root.right.right = new TreeNode(6);
+		root.right.right.right = new TreeNode(10);
+		
 		printRootToLeaftPaths(root);
+		
+		System.out.println("Max Height of tree is: " + (maxHeight(root)-1));
 	}
 }
