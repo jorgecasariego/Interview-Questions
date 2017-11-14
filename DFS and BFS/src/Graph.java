@@ -32,7 +32,7 @@ public class Graph {
 		Node d = getNode(destination);
 		
 		// In this HashSet I will record all the nodes that I already visited
-		HashSet<Integer> visited = new HashSet<Integer>();
+		HashSet<Integer> visited = new HashSet<Integer>();		// This is the key!
 		
 		return hasPathDFS(s, d, visited);
 	}
@@ -63,7 +63,7 @@ public class Graph {
 	
 	// This method is to know if exist a path from source to destination using a BFS algorithm
 	private boolean hasPathBFS(Node source, Node destination) {
-		LinkedList<Node> nextToVisit = new LinkedList<Node>();
+		LinkedList<Node> nextToVisit = new LinkedList<Node>();	// This is the key!
 		HashSet<Integer> visited = new HashSet<Integer>();
 		
 		// In BFS algorithm we begin the search by the source node
