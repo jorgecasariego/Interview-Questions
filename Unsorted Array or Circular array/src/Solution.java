@@ -1,41 +1,37 @@
-
+/**
+ * An element in a sorted array can be found in O(log n) time via binary search.
+ * 
+ * But suppose we rotate an ascending order sorted array at some pivot unknown 
+ * to you beforehand. So for instance, 1 2 3 4 5 might become 3 4 5 1 2. 
+ * Devise a way to find an element in the rotated array in O(log n) time.
+ * 
+ * @author jorgecasariego
+ *
+ */
 public class Solution {
 	
-	// TEST
-	// 2, 3, 4, 5, 1
-	//          ^
-	// item = 5
-	// Length = 5
-	// offset: length - array[0] + 1 = 5 - 2 + 1 = 4
-	// Position: item + offset - length - 1 = 5 + 3 - 5: 3 
-	static public int indexK(int item, int[] array){
-		int length = array.length;
-		int position = 0;
-		
-		if(length == 0){
-			return -1;
-		}
-		
-		int offset = length - array[0] + 1;
-		if(offset == length) offset = 0;
-		
-		
-		if(item >= array[0]){
-			position = item + offset - length - 1;
-		} else {
-			position = item + offset - 1;
-		}
-		
-		return array[position] == item ? position : -1;
-		
-	}
-	
+	/**
+     *	 	1) Find middle point mid = (l + h)/2
+     *		2) If key is present at middle point, return mid.
+     *		3) Else If arr[l..mid] is sorted
+     *    		a) If key to be searched lies in range from arr[l] to arr[mid], recur for arr[l..mid].
+     *    		b) Else recur for arr[mid+1..r]
+     *		4) Else (arr[mid+1..r] must be sorted)
+     *    		a) If key to be searched lies in range from arr[mid+1] to arr[r], recur for arr[mid+1..r].
+     *    	b) Else recur for arr[l..mid]
+     *	 
+	 * @param array
+	 * @param item
+	 * @return
+	 * 
+	 * Time Complexity O(logn). 
+	 */
 	static int calculateArraySearch(int array[], int item) {
 		int left = 0;
 		int right = array.length - 1;
 		
 		while(left <= right) {
-			int mid = (left + right) / 2;
+			int mid = (left + right) / 2; 	// Find middle point
 			
 			if(item == array[mid]) {		// Case 1: Found item!!!
 				return mid;
@@ -61,9 +57,7 @@ public class Solution {
 
 	public static void main(String[] args) {
 		int [] numbers = {55, 63, 110, 2, 3, 4};
-		
-		//int index = indexK(63, numbers); // This not work for any order array. Just for the one that begin with 1, 2, 3, ...
-		
+				
 		int index = calculateArraySearch(numbers, 2);
 		
 		System.out.println("Position is: " + index);
