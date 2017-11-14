@@ -120,7 +120,7 @@ public class PrintAnagramsTogether {
 	// Driver program to test above functions
     public static void main(String args[])
     {
-        String wordArr[] = {"cat", "dog", "tac", "god","act", "gdo"};
+        String wordArr[] = {"cat", "dog", "tac", "god","act", "gdo", "dogo"};
         int size = wordArr.length;
         printAnagramsTogether(wordArr, size);
     }
