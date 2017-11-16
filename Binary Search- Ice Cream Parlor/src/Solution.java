@@ -1,5 +1,16 @@
 import java.util.Arrays;
 
+/*
+ * Given the value of money and the cost of each flavor for t trips to the Ice Cream Parlor, 
+ * help Sunny and Johnny choose two distinct flavors such that they spend their entire 
+ * pool of money during each visit. 
+ * 
+ * Print two space-separated integers denoting the respective ID numbers for the two 
+ * distinct flavors they choose to purchase, where the smaller ID is printed first and 
+ * the larger ID is printed second. Recall that each ice cream flavor has a unique ID 
+ * number in the inclusive range from 1 to flavors.
+ * 
+ */
 public class Solution {
 
 	// flavors: 1 4 5 3 2
