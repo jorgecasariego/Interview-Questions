@@ -47,6 +47,23 @@ public class Palindromes {
 		return true;
 	}
 	
+	public static boolean isPalindrome(String s){
+		s = s.toLowerCase();
+		
+		if(s.length() < 2){
+			return true;
+		} else {
+			char first = s.charAt(0);
+			char last = s.charAt(s.length() - 1);
+			if(first == last) {
+				// It is very common to call isPalindrome but not returning nothing.
+				return isPalindrome(s.substring(1, s.length() - 1)); // This is really important!
+			} else {
+				return false;
+			}
+		}		
+	}
+	
 	public static void main(String[] args) {
 		Node n1 = new Node(1);
 		Node n2 = new Node(2);
@@ -62,6 +79,9 @@ public class Palindromes {
 		} else {
 			System.out.println("The linked list is not a palindrome");
 		}
+		
+		System.out.println("AMa : " + isPalindrome("AMa"));
+		System.out.println("AMAR : " + isPalindrome("AMAR"));
 	}
 
 }
