@@ -1,6 +1,10 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+ * Given a unsorted linked list, write a funciotn to remove all the duplicates
+ * 
+ */
 public class Dedup {
 	
 	static class Node {

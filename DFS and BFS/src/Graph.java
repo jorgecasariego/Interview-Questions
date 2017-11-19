@@ -61,9 +61,12 @@ public class Graph {
 		return hasPathBFS(getNode(source), getNode(destination));
 	}
 	
-	// This method is to know if exist a path from source to destination using a BFS algorithm
+	// This method is to know if exist a path from source 
+	// to destination using a BFS algorithm
 	private boolean hasPathBFS(Node source, Node destination) {
-		LinkedList<Node> nextToVisit = new LinkedList<Node>();	// This is the key!
+
+		// This is the key!
+		LinkedList<Node> nextToVisit = new LinkedList<Node>();	
 		HashSet<Integer> visited = new HashSet<Integer>();
 		
 		// In BFS algorithm we begin the search by the source node

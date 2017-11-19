@@ -28,7 +28,6 @@ public class FizzBuzz {
 		}
 		
 		System.out.println(textToPrint);
-		
 	}
 	
 	public static void main(String[] args){

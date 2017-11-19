@@ -44,7 +44,7 @@ public class Solution {
 		}
 		
 		// We will calculate the pivot of the partial array
-		int pivot = (int)((totalSum - partialArraySum) / 2);
+		int pivot = (int)((totalSum - partialArraySum) / 2); // This is the tricky part!
 		
 		int totalLeftXor = 0;
 		int arrLeftXor = 0;

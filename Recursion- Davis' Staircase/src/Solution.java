@@ -24,7 +24,7 @@ public class Solution {
     public static void main(String[] args) {
     	long initialTime = System.currentTimeMillis();
         
-    	System.out.println(numberOfWays(35));
+    	System.out.println(numberOfWays(4));
     	
     	long finalTime = System.currentTimeMillis();
     	
