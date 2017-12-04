@@ -4,8 +4,10 @@ public class Solution {
 	// TEST
 	//  6, 4, 0, 5, 0, 0, 0, 1, 0
 	//						    ^
+	//						   last
 	//  ^                   
-	public static int[] orderArray(int[] numbers){
+	// first
+	public static int[] reverseOrderArray(int[] numbers){
 		
 		int last = numbers.length - 1;
 		int first = 0;
@@ -45,7 +47,7 @@ public class Solution {
 		
 		int[] numbers = new int[]{ 6, 4, 0, 5, 0, 0, 0, 1, 0 };
 		
-		int[] orderArray = orderArray(numbers);
+		int[] orderArray = reverseOrderArray(numbers);
 		
 		for(int i: orderArray){
 			System.out.print(i + " ");

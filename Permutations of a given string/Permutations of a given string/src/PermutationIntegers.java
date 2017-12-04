@@ -11,6 +11,14 @@ public class PermutationIntegers {
 		return results;
 	}
 	
+	//	TEST
+	// 	{1, 2, 3}
+	//  {1, 3, 2}
+	//	{2, 1, 3}
+	// 	{2, 3, 1}
+	// 	{3, 2, 1}
+	//	{3, 1, 2}
+	
 	private static void listPermutations(int[] a, int start, ArrayList<int[]> results){
 		if(start >= a.length){
 			results.add(a.clone());
@@ -31,7 +39,7 @@ public class PermutationIntegers {
 	
 	public static void main(String[] args) {
 		
-		int[] numbers = {1, 2, 3, 4};
+		int[] numbers = {1, 2, 3};
 		ArrayList<int[]> result = integerPermutation(numbers);
 		
 		Iterator<int[]> i = result.iterator();

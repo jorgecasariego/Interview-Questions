@@ -80,8 +80,9 @@ public class Palindromes {
 			System.out.println("The linked list is not a palindrome");
 		}
 		
-		System.out.println("AMa : " + isPalindrome("AMa"));
+		System.out.println("AM : " + isPalindrome("AM"));
 		System.out.println("AMAR : " + isPalindrome("AMAR"));
+		System.out.println("Amore, Roma: " + isPalindrome("AmoreRoma"));
 	}
 
 }

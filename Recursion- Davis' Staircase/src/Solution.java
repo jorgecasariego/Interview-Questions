@@ -1,5 +1,11 @@
 import java.util.HashMap;
 
+/**
+ * For each staircase, print the number of ways Davis can climb it in a new line.
+ * 
+ * @author jorgecasariego
+ *
+ */
 public class Solution {
 
 	static HashMap<Integer, Integer> memo = new HashMap<>();

@@ -45,6 +45,7 @@ public class SmallestNumber {
 	}
 
 	public static void main(String[] args){
+		findSmallestNumber(5);
 		findSmallestNumber(17);
 		findSmallestNumber(80);
 		findSmallestNumber(25);
