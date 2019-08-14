@@ -16,8 +16,8 @@ public class Palindromes {
 	}
 	/*
 	 * 				1 -> 2 -> 2 -> 1 -> null
-	 * current:		^
-	 * runner: 		^
+	 * current:		                     ^
+	 * runner: 		                     ^
 	 * stack: 		[1,2]
 	 * 
 	 */
@@ -83,6 +83,7 @@ public class Palindromes {
 		System.out.println("AM : " + isPalindrome("AM"));
 		System.out.println("AMAR : " + isPalindrome("AMAR"));
 		System.out.println("Amore, Roma: " + isPalindrome("AmoreRoma"));
+		System.out.println("AMA: " + isPalindrome("AMA"));
 	}
 
 }

@@ -4,8 +4,7 @@ public class GFG {
 
 	/*
 	 * A graph is an array of adjacency lists.
-	 * Size of array will be V (number of vertices
-	 * in graph)
+	 * Size of array will be V (number of vertices in graph)
 	 */
 	public static class Graph {
 		int v;

@@ -65,5 +65,6 @@ public class Queue {
 		queue.dequeue();
 		queue.dequeue();
 		queue.dequeue();
+		
 	}
 }

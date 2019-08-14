@@ -27,6 +27,7 @@ public class Graph {
 		s.adjacent.add(d);
 	}
 	
+	// DFS: Depth First Search
 	public boolean hasPathDFS(int source, int destination) {
 		Node s = getNode(source);
 		Node d = getNode(destination);

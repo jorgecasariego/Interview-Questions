@@ -1,6 +1,15 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * La sucesión comienza con los números 0 y 1,2​ y a partir de estos, «cada término es la suma de los dos anteriores»
+ * 
+ * “Memoization is an optimization technique used primarily to speed up computer programs by storing the results of 
+ * expensive function calls and returning the cached result when the same inputs occur again.”
+ * 
+ * @author jorgecasariego
+ *
+ */
 public class Fibonacci {
 
 	private static Map<Integer, Integer> memo = new HashMap<>();

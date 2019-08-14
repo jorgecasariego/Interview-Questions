@@ -31,6 +31,6 @@ public class FizzBuzz {
 	}
 	
 	public static void main(String[] args){
-		fizzBuzz(15);
+		fizzBuzz(100);
 	}
 }
