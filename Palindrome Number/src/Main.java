@@ -32,7 +32,11 @@
 	palindrome, for example: -123 is not a palindrome since the '-' does not equal to '3'. 
 	So we can return false for all negative numbers.
 	
-	Now let's think about how to revert the last half of the number. For number 1221, if we do 1221 % 10, we get the last digit 1, to get the second to the last digit, we need to remove the last digit from 1221, we could do so by dividing it by 10, 1221 / 10 = 122. Then we can get the last digit again by doing a modulus by 10, 122 % 10 = 2, and if we multiply the last digit by 10 and add the second last digit, 1 * 10 + 2 = 12, it gives us the reverted number we want. Continuing this process would give us the reverted number with more digits.
+	Now let's think about how to revert the last half of the number. For number 1221, if we do 1221 % 10, we get the
+ 	last digit 1, to get the second to the last digit, we need to remove the last digit from 1221, we could do so by
+ 	dividing it by 10, 1221 / 10 = 122. Then we can get the last digit again by doing a modulus by 10, 122 % 10 = 2, and
+ 	if we multiply the last digit by 10 and add the second last digit, 1 * 10 + 2 = 12, it gives us the reverted number
+ 	we want. Continuing this process would give us the reverted number with more digits.
 	
 	Now the question is, how do we know that we've reached the half of the number?
 	
