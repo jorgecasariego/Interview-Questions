@@ -28,6 +28,9 @@ fun lengthOfLongestSubstring(s: String): Int {
     return maxLenght
 }
 
+/**
+ * For this problem the most intuitive way is doing brute force
+ */
 fun main() {
 
     val length = lengthOfLongestSubstring("Hello")
